@@ -25,7 +25,8 @@ function PokemonCard({ pokemon }) {
             ) : (
                 <img style={img} src={pokemon.imgSrc}></img>
             )}
-            <figcaption>bulbasaur</figcaption>
+
+            <figcaption>{pokemon.name}</figcaption>
         </figure>
     );
 }
