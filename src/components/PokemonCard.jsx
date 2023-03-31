@@ -18,6 +18,9 @@ const img = {
 };
 
 function PokemonCard({ pokemon }) {
+    if (pokemon.name === "pikachu") {
+        alert("pika pikachu !!!");
+    }
     return (
         <figure style={card}>
             {pokemon.imgSrc === undefined || null ? (
