@@ -6,9 +6,9 @@ import React from "react";
 import NavBar from "./components/NavBar";
 
 function App() {
-    useEffect(() => {
-        alert("hello pokemon trainer :)");
-    }, []);
+    // useEffect(() => {
+    //     alert("hello pokemon trainer :)");
+    // }, []);
 
     const [pokemonIndex, setPokemonIndex] = useState(0);
 
@@ -38,9 +38,8 @@ function App() {
         <div>
             <PokemonCard pokemon={pokemonList[pokemonIndex]} />
             <NavBar
-                pokemonIndex={pokemonIndex}
                 setPokemonIndex={setPokemonIndex}
-                pokemonLength={pokemonList.length - 1}
+                pokemonList={pokemonList}
             />
         </div>
     );
